@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin-top: 150px;
+            margin-bottom: 200px;
+            margin-left: 600px;
+        }
+            body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7FfM_fDDnKy_ShaskVMv-bRDe5wqeN5Cew&usqp=CAU");
+            background-size: cover;
+
+            }
+            
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <form method="POST">
+        <h1 style="color: crimson;">Update Post</h1>
+        <label for="">Title:</label><br>
+        <input name="name" type="text" value="{{ post[1] }}"><br>
+        <label for="">Content:</label><br>
+        <textarea name="content" rows="5"value="{{ post[2] }}"></textarea>
+        <br>
+        <label for="">Slug:</label><br>
+        <input name="slug" type="text" value="{{ post[4] }}"><br><br>
+        <button>Update Post</button>
+        
+    </form>
+</div>
+</body>
+</html>
